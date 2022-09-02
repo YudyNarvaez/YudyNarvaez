@@ -1,0 +1,35 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-router-link href="javascript:history.back()" color="black">
+    <ion-icon name="return-up-back-outline" id="back"></ion-icon>
+  </ion-router-link>
+  <p id="font">Registro Niño(a)</p>
+  <ion-input placeholder="Nombres" id="form"></ion-input>
+  <ion-input placeholder="Apellidos" id="form" style="margin-top: 13px;"></ion-input>
+  <ion-item lines="none" style="margin-left: -20px;">
+    <ion-label position="stacked">Fecha de nacimiento</ion-label>
+    <ion-input type="date" id="form" ></ion-input>
+  </ion-item>
+  <ion-item lines="none" style="margin-left: -20px;">
+    <ion-label style="font-size: 15px;">Con diagnóstico Asperger</ion-label>
+    <ion-checkbox slot="start" color="dark" checked></ion-checkbox>
+  </ion-item>
+  <p style="text-align: center; font-size: 15px;">Género</p>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-checkbox class="check2" color="dark"></ion-checkbox>
+      </ion-col>
+      <ion-col>
+        <ion-checkbox class="check2" color="dark"></ion-checkbox>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-button color="dark" style="font-size: 11px;">+</ion-button>
+  <ion-button expand="block" id="btn" color="dark">
+    <ion-router-link color="light" href="./home">FINALIZAR REGISTRO</ion-router-link>
+  </ion-button>
+  <ion-item lines="none" style="margin-left: -20px;">
+    <p style="font-size: 12px;">Acepto los <u>Terminos y Condiciones</u> y <u>Política de Privacidad</u>.</p>
+    <ion-checkbox slot="start" color="dark" checked></ion-checkbox>
+  </ion-item>
+</ion-content>

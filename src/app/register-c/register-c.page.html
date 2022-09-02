@@ -1,0 +1,22 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-router-link href="javascript:history.back()" color="black">
+    <ion-icon name="return-up-back-outline" id="back"></ion-icon>
+  </ion-router-link>
+  <p id="font">Registro Usuario</p>
+  <ion-input placeholder="Nombres" id="form"></ion-input>
+  <ion-input placeholder="Apellidos" id="form" style="margin-top: 13px;"></ion-input>
+  <ion-input placeholder="Cédula" type="number" id="form" style="margin-top: 13px;"></ion-input>
+  <ion-input placeholder="Dirección" id="form" style="margin-top: 13px;"></ion-input>
+  <ion-input placeholder="Numero de contacto" type="number" id="form" style="margin-top: 13px;"></ion-input>
+  <ion-item lines="none" style="margin-left: -20px;">
+    <ion-label style="font-size: 15px;">Padre o Madre</ion-label>
+    <ion-checkbox slot="start" color="dark"></ion-checkbox>
+  </ion-item>
+  <ion-item lines="none" style="margin-left: -20px;">
+    <ion-label style="font-size: 15px;">Profesional de la salud</ion-label>
+    <ion-checkbox slot="start" color="dark"></ion-checkbox>
+  </ion-item>
+  <ion-button expand="block" id="btn-ft" color="dark">
+    <ion-router-link color="light" href="./registern">AGREGAR NIÑO(A)</ion-router-link>
+  </ion-button>
+</ion-content>
