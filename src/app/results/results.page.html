@@ -6,31 +6,31 @@
   <ion-grid>
     <ion-row>
       <ion-col>
-        <ion-img src="../../assets/img/nina.png" class="result-img"></ion-img>
-        <p class="result-p">% Alegría</p>
+        <ion-img src="../../assets/img/alegria.png" class="result-img"></ion-img>
+        <p class="result-p">{{probs.joy.toFixed(2)}}% Alegría</p>
       </ion-col>
       <ion-col>
-        <ion-img src="../../assets/img/nino.png" class="result-img"></ion-img>
-        <p class="result-p">% Enfado</p>
+        <ion-img src="../../assets/img/enojo.png" class="result-img"></ion-img>
+        <p class="result-p">{{probs.anger.toFixed(2)}}% Enfado</p>
       </ion-col>      
     </ion-row>
     <ion-row>
       <ion-col>
-        <ion-img src="../../assets/img/nina.png" class="result-img"></ion-img>
-        <p class="result-p">% Asombro</p>
+        <ion-img src="../../assets/img/sorpresa.png" class="result-img"></ion-img>
+        <p class="result-p">{{probs.surprise.toFixed(2)}}% Asombro</p>
       </ion-col>      
     </ion-row>
     <ion-row>
       <ion-col>
-        <ion-img src="../../assets/img/nino.png" class="result-img"></ion-img>
-        <p class="result-p">% Tristeza</p>
+        <ion-img src="../../assets/img/tristeza.png" class="result-img"></ion-img>
+        <p class="result-p">{{probs.sadness.toFixed(2)}}% Tristeza</p>
       </ion-col>
       <ion-col>
-        <ion-img src="../../assets/img/nina.png" class="result-img"></ion-img>
-        <p class="result-p">% Desagrado</p>
+        <ion-img src="../../assets/img/desagrado.png" class="result-img"></ion-img>
+        <p class="result-p">{{probs.disgust.toFixed(2)}}% Desagrado</p>
       </ion-col>      
     </ion-row>
   </ion-grid>
   <p class="result-p2">El analisis muestra que el texto tiene mayor contenido de la emocion:</p>
-  <ion-button expand="block" id="btn" color="dark">ALEGRÍA</ion-button>
+  <ion-button expand="block" id="btn" color="dark">{{ emotion }}</ion-button>
 </ion-content>

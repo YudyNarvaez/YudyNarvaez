@@ -4,11 +4,11 @@
     </ion-router-link>
     <p id="font" style="text-align: center;">Bienvenida Yudy</p>
     <p id="caption">Ingresa tu texto para el análisis</p>
-    <ion-textarea id="text" maxlength="150"></ion-textarea>
+    <ion-textarea id="text" maxlength="150" #text></ion-textarea>
     <p id="captionkid">Selecciona el niño(a) que escribió el texto:</p>    
     <ion-checkbox class="check" color="dark"></ion-checkbox>
     <ion-checkbox class="check" color="dark"></ion-checkbox>
-    <ion-button expand="block" id="btn" color="dark">
-        <ion-router-link color="light" href="./results">ANALIZAR EMOCION</ion-router-link>
+    <ion-button expand="block" id="btn" color="dark" (click)="analizarEmocion(text.value)">
+        <ion-router-link color="light">ANALIZAR EMOCION</ion-router-link>
     </ion-button>
 </ion-content>
